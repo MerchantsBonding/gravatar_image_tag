@@ -1,17 +1,18 @@
 # frozen_string_literal: true
 
 $LOAD_PATH.push File.expand_path("../lib", __FILE__)
+require_relative "lib/gravatar_image_tag/version"
 
 Gem::Specification.new do |s|
   s.name = "gravatar_image_tag"
-  s.version = "1.2.1"
+  s.version = GravatarImageTag::VERSION
   s.authors = ["Michael Deering"]
   s.email = "mdeering@mdeering.com"
   s.summary = "A configurable and documented Rails view helper for adding gravatars into your Rails application."
   s.homepage = "http://github.com/mdeering/gravatar_image_tag"
   s.license = "MIT"
 
-  s.files = Dir["lib/**/*"] + ["MIT-LICENSE", "README.textile", "Rakefile"]
+  s.files = Dir["lib/**/*"] + ["CHANGELOG.md", "MIT-LICENSE", "README.textile", "Rakefile"]
   s.require_paths = ["lib"]
 
   s.required_ruby_version = ">= 3.1"

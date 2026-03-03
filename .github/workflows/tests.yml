@@ -8,7 +8,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ruby: [3.4.7, 4.0.1]
+        ruby: ["3.4.7", "4.0.1"]
         gemfile:
           - rails_7_2
           - rails_8_0
