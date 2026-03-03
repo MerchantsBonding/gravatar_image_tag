@@ -1,23 +1,22 @@
-require File.dirname(__FILE__) + '/test_helper'
+require File.dirname(__FILE__) + "/test_helper"
 
-require 'gravatar_image_tag'
+require "gravatar_image_tag"
 
 ActionView::Base.send(:include, GravatarImageTag)
 
 describe GravatarImageTag do
-
-  email                 = 'mdeering@mdeering.com'
-  md5                   = '4da9ad2bd4a2d1ce3c428e32c423588a'
+  email                 = "mdeering@mdeering.com"
+  md5                   = "4da9ad2bd4a2d1ce3c428e32c423588a"
   default_filetype      = :gif
-  default_image         = 'http://mdeering.com/images/default_gravatar.png'
-  default_image_escaped = 'http%3A%2F%2Fmdeering.com%2Fimages%2Fdefault_gravatar.png'
-  default_rating        = 'x'
+  default_image         = "http://mdeering.com/images/default_gravatar.png"
+  default_image_escaped = "http%3A%2F%2Fmdeering.com%2Fimages%2Fdefault_gravatar.png"
+  default_rating        = "x"
   default_size          = 50
-  other_image           = 'http://mdeering.com/images/other_gravatar.png'
-  other_image_escaped   = 'http%3A%2F%2Fmdeering.com%2Fimages%2Fother_gravatar.png'
+  other_image           = "http://mdeering.com/images/other_gravatar.png"
+  other_image_escaped   = "http%3A%2F%2Fmdeering.com%2Fimages%2Fother_gravatar.png"
   secure                = false
 
-  let(:view) { ActionView::Base.new(ActionView::LookupContext.new([])) }
+  let(:view) { ActionView::Base.new(ActionView::LookupContext.new([]), {}, nil) }
 
   context '#gravatar_image_tag' do
 
