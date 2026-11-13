@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.2] - 2026-11-13
+
+### Changed
+
+- Upgrade development Ruby to 4.0.9 and run CI on Ruby 4.0.9 on Ubuntu 26.04 runners.
+
 ### Added
 
 - Appraisal with Ruby and Rails matrix testing
